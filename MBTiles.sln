@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MBTiles.Web", "MBTiles.Web\MBTiles.Web.csproj", "{3F5F800D-C578-4DA0-965C-C46CF5E04C68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MBTiles.Parser", "MBTiles.Parser\MBTiles.Parser.csproj", "{9E41007C-8778-4371-A3B5-C35539089C13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F5F800D-C578-4DA0-965C-C46CF5E04C68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F5F800D-C578-4DA0-965C-C46CF5E04C68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F5F800D-C578-4DA0-965C-C46CF5E04C68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F5F800D-C578-4DA0-965C-C46CF5E04C68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E41007C-8778-4371-A3B5-C35539089C13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E41007C-8778-4371-A3B5-C35539089C13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E41007C-8778-4371-A3B5-C35539089C13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E41007C-8778-4371-A3B5-C35539089C13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7EE358C-C359-450F-8E92-055426F59983}
+	EndGlobalSection
+EndGlobal

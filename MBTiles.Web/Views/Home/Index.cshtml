@@ -1,0 +1,37 @@
+﻿@using System.Web
+@model MBTiles.Parser.MapInfos
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<h1>@Model.Name</h1>
+<h2>@Model.Description</h2>
+<h3>@Model.Format</h3>
+<div id="map">
+</div>
+
+@section Scripts{
+    <script type="text/javascript" src="~/lib/leaflet/leaflet.min.js"></script>
+    <script type="text/javascript">
+        @{
+            var center = Model.Center.Split(',');
+        }
+                //-61.070251,14.612820,16
+
+        
+        var map = L.map('map').setView([1.46, 43.62], 15)//[@center[1], @center[0] ], @center[2]);
+        L.tileLayer('@Url.Content("~/tile/{z}/{x}/{y}.png")', {
+            maxZoom: 16,
+            attribution: '@Html.Raw(Model.Attribution)'// &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        
+    </script>
+}
+
+@section css{
+    <link rel="stylesheet" href="~/lib/leaflet/leaflet.min.css" />
+}
